@@ -13,6 +13,7 @@
 # =============================================================================
 
 library(tidyverse)
+library(dashboardr)
 # devtools::load_all()
 
 set.seed(2024)
@@ -437,3 +438,4 @@ cat("\n=== Generating Mark's Dashboard ===\n")
 generate_dashboard(dashboard, render = TRUE, open = "browser")
 cat("\n=== Done! ===\n")
 
+publish_dashboard()
